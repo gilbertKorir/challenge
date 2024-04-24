@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: "Monotype Corsiva", cursive;
-    font-size: 22px;
+    /* font-family: "Algerian", cursive; */
+    font-size: 15px;
     height: 100vh;
     background: linear-gradient(to bottom, #E5990B, #8f94fb); 
     color: #ffffff; /* Text color */
