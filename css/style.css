@@ -31,7 +31,7 @@ body {
     align-items: center; /* Center contents vertically */
 }
 
-#divres img {
+ img {
     margin: auto; 
     display: block; 
     width: 100px;

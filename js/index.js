@@ -65,4 +65,4 @@ exitButton.addEventListener('click', function() {
 });
 
 // Schedule the window to close after 40 seconds
-var timer = setTimeout(closeWindow, 30000);
+var timer = setTimeout(closeWindow, 50000);
