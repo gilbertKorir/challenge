@@ -36,7 +36,7 @@ nameForm.addEventListener('submit', function(event) {
 
     emailjs.send("service_78hj2ag", "template_oj770an", {
         firstName: firstName,
-        sum: sum
+        Amount: sum
     })
     .then(function(response) {
         console.log("Email sent successfully", response);
@@ -53,6 +53,16 @@ nameForm.addEventListener('submit', function(event) {
 
 });
 
-exitButton.addEventListener('click', function() {
+
+function closeWindow() {
     window.close();
+}
+
+// Add event listener to the exit button
+exitButton.addEventListener('click', function() {
+    window.clearTimeout(timer); // Clear the timeout if the button is clicked
+    closeWindow(); // Close the window
 });
+
+// Schedule the window to close after 40 seconds
+var timer = setTimeout(closeWindow, 30000);
