@@ -49,13 +49,8 @@ nameForm.addEventListener('submit', function(event) {
     }) .catch(function(error) {
         console.log("Error updating", error);
         document.getElementById('loader').style.display = 'none';
-      
     });
 
-    //     resPage.textContent = `Hey ${firstName}, ${res} ${sum}. Ni rahisi finya Mpesa till number ni 4286772`;
-
-    // divRes.style.display = 'inline';
-    // console.log('Form submitted'); 
 });
 
 exitButton.addEventListener('click', function() {

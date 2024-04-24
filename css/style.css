@@ -18,15 +18,26 @@ body {
  
 }
 
-#divres{
-    display: none;
+#divres {
+    display: none; /* Hide the div by default */
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid blue;
     height: auto;
     padding: 10px;
     width: 90%;
+    text-align: center; /* Center the text content horizontally */
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
 }
+
+#divres img {
+    margin: auto; 
+    display: block; 
+    width: 100px;
+    border-radius: 15px;
+}
+
 
 
 #loader {
@@ -37,6 +48,7 @@ body {
     display: none;
     z-index: 10000;
 }
+
 
 
 
