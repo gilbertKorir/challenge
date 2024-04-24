@@ -33,7 +33,6 @@ nameForm.addEventListener('submit', function(event) {
     }
 
     document.getElementById('loader').style.display = 'block';
-    // document.getElementById('pageContainer').style.filter = 'blur(4px)';
 
     emailjs.send("service_78hj2ag", "template_oj770an", {
         firstName: firstName,
@@ -42,8 +41,7 @@ nameForm.addEventListener('submit', function(event) {
     .then(function(response) {
         console.log("Email sent successfully", response);
         document.getElementById('loader').style.display = 'none';
-        // document.getElementById('pageContainer').style.filter = 'none';
-        // Display the sum
+    
         resPage.textContent = `Hey ${firstName}, ${res} ${sum}. Ni rahisi finya Mpesa till number ni 4286772`;
         divRes.style.display = 'inline';
     }, function(error) {
@@ -51,8 +49,7 @@ nameForm.addEventListener('submit', function(event) {
     }) .catch(function(error) {
         console.log("Error updating", error);
         document.getElementById('loader').style.display = 'none';
-        // // Remove blur effect
-        // document.getElementById('pageContainer').style.filter = 'none';
+      
     });
 
     //     resPage.textContent = `Hey ${firstName}, ${res} ${sum}. Ni rahisi finya Mpesa till number ni 4286772`;
