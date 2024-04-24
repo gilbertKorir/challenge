@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.jpeg" type="image/x-icon">
+    <title>Nuru Name challenge</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/nuru.css">
+</head>
+<body>
+    <div class="container" >
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-4 text-center pt-4">
+                <form id="nameForm">
+                    <h5 class="text-center">Welcome to our today's challenge team Nuru let's spoil the first quarter babies!</h5>
+                    <div class="form-group pt-3">
+                        <label for="firstName">First Name Only:</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                    </div>
+                    <button type="submit" id="submitButton" class="btn btn-lg btn-block custom-button" style="width: 90%; margin: auto;">Check</button>
+                </form>
+            </div>
+        </div>
+        <div id="loader" style="display: none;">
+            Loading...
+        </div>
+        <div class="row mt-4 justify-content-center" >
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div id="divres">
+                    <p id="resPage"></p>
+                    <button type="submit" id="exitButton"  style="width: 90%; margin: auto;">Okay</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./js/nuru.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('NQhpaI567slc3Y88A')
+      </script>
+</body>
+</html>

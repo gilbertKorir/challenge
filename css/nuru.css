@@ -1,0 +1,47 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Goudy Old style", cursive;
+    font-size: 22px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #E5990B, #8f94fb); 
+    color: #ffffff; /* Text color */
+}
+.custom-button {
+    background-color: #239C0B; 
+    color: #fff; 
+ 
+}
+
+#divres{
+    display: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid blue;
+    height: auto;
+    padding: 10px;
+    width: 90%;
+}
+
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 10000;
+}
+
+
+
+
+
+
+
+
